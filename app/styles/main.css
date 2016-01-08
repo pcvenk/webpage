@@ -127,11 +127,33 @@ body {
   justify-content: center;
   align-items: center;
 
+}
+
+.pointer-wrapper {
+
+  position: absolute;
+
 
 }
 
-.down-arrow {
+.pointer {
 
+  width: 20px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 10px;
+  color: #c0c1c2;
+  text-align: center;
+  padding-top: 12px;
+
+
+}
+
+.icon-chevron-down:before {
+
+  content: "\e900";
+  color: #c0c1c2;
+  font-size: 1.4em;
 
 }
 
@@ -200,7 +222,7 @@ h2 {
 
 .col-centered {
 
-  display: inline-block;
+  /*display: inline-block;*/
   margin-bottom: 75px;
 
 
@@ -447,83 +469,107 @@ p {
 
   width: 100%;
   height: 350px;
-  background-color: #124f69;
+  background-color: #723939;
 
 }
 
 
 footer {
 
+  color: #c0c1c2;
+  background-color: #313131;
   font-family: "freight-sans-pro";
-  font-weight: 100;
+  font-weight: 400;
   font-size: 1em;
 
 }
 
-#footer-info {
+footer .container {
 
-  padding-left: auto;
-  padding-right: auto;
-
+  padding-bottom: 50px;
 }
 
-#contact-details, #add-details, #social-media, #copyright {
 
-  display: inline-block;
-  position: relative;
+.brand-name {
 
-}
-
-#contact-details {
-
-  background-image: url(../images/logo.png);
+  background-image: url(../images/logoW.png);
   background-repeat: no-repeat;
-  background-position: 40px 48px;
+  position: relative;
+  top: 50px;
+  left: 55px;
+  height: 80px;
 
 }
 
-#contact-details h5 {
+.brand-name h5 {
 
-  color: black;
+  margin: 0;
   font-size: 3em;
   font-weight: 300;
-  position: absolute;
-  left: 85px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#getting-things-done h2 {
-
-  text-align: right;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: #4A4A4A;
-  padding-top: 70px;
-  padding-bottom: 50px;
-  padding-right: 240px;
-  font-size: 3.5em;
+  padding-left: 50px;
+  padding-top: 5px;
+  text-align: left;
 
 }
 
-#getting-things-done p {
+.icon-linkedin:before {
 
-  font-size: 2em;
-  width: 350px;
+  content: "\e906";
+  font-size: 25px;
+
+}
+
+
+.icon-facebook:before {
+
+  content: "\e905";
+  font-size: 25px;
+
+}
+
+#social-icons {
+
+  text-align: left;
+  margin-top: 35px;
+  margin-left: 20px
+
+}
+
+#copyright {
+
   position: absolute;
-  right: 306px;
-  width: 550px;
-  padding: 10px;
+  bottom: 0;
+  right: 0;
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 994px) {
+
+  .footer-info {
+    padding: 0;
+
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  .footer-info {
+
+    text-align: center;
+
+  }
+
+  .brand-name {
+
+    position: relative;
+    left: 40%;
+
+  }
+
+  .social-icons {
+
+    text-align: center; /*neki ne spila z logotipom in druzabnimi mediji. fixit*/
+  }
+}
 
 
-}*/

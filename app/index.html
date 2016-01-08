@@ -2,9 +2,10 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <title>Weblio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Weblio</title>
 
     <script src="https://use.typekit.net/tez3fsx.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
@@ -18,8 +19,11 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
 
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="icons/style.css" rel="stylesheet">
+
 
     <!-- endbuild -->
   </head>
@@ -53,9 +57,14 @@
       </header>
 
     <div id="hero">
-      <h1>Web Development</h1>
+      <h1>Web Development,</h1>
       <h1>Design and Translation</h1>
-      <span class="down-arrow">icon-angle-double-down</span><!-- pogrunti, kako se uvozi iconomoon fonte za down arrow. -->
+      <div class="pointer-wrapper">
+        <div class="pointer">
+          <div class="icon-chevron-down"></div>
+        </div>
+      </div>
+
     </div>
 
     <div id="services">
@@ -107,7 +116,7 @@
 
     <div class="container">
       <div class="row row-centered">
-        <article class="col-lg-6 col-md-12 col-centered ">
+        <article class="col-lg-6 col-md-12 col-centered">
           <img class="orchids" src="images/orchids_final2_small.gif" alt="Orchid">
         </article>
 
@@ -130,30 +139,37 @@
     <div id="particles-js"></div>
 
     <footer>
-      <div id="footer-info">
-        <div id="contact-details">
-          <p><h5>Weblio</h5></p>
+      <div class="container">
+        <div class="row row-centered">
+          <div class="col-sm-12 footer-info">
+            <div class="brand-name">
+              <span><h5>Weblio</h5></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 footer-info">
           <p>Triglavska cesta 29<br>
-             4260 Bled<br>
-             Slovenia</p>
+            4260 Bled<br>
+            Slovenia</p>
         </div>
 
-        <div id="add-details">
+        <div class="col-sm-4 footer-info">
           <p>mail:info@weblio.si<br>
-             tel: +386 41 231 627</p>
+            tel: +386 41 231 627</p>
         </div>
 
-        <div id="social-media">
-          <p>LinkedIn, Facebook, Pinterest</p>
+        <div class="col-sm-4 footer-info">
+          <div id="social-icons">
+            <span class="icon-linkedin"></span>
+            <span class="icon-facebook"></span>
+          </div>
         </div>
-
-        <div id="copyright">
-          <p>Copyright 2016</p>
-        </div>
-
       </div>
 
-
+      <div id="copyright">
+        <p>Copyright 2016</p>
+      </div>
     </footer>
 
 
@@ -175,7 +191,7 @@
     <!-- build:js scripts/main.js -->
     <!--<script src="scripts/prefixfree.min.js"></script> -->
     <script src="scripts/main.js"></script>
-    <script src="scripts/particles.js"></script>
+    <script src="scripts/particles.js"></script> <!--Performance issue. fix it-->
     <script src="scripts/app.js"></script>
 
     <!-- endbuild -->
